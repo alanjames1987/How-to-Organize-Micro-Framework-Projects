@@ -1,0 +1,1 @@
+<!-- This view should represent a single CRUD method -->

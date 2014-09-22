@@ -1,0 +1,26 @@
+{
+  "name": "Generic Express",
+  "version": "0.0.1",
+  "authors": [
+    {
+      "name": "Author",
+      "email": "author@site.com"
+    }
+  ],
+  "dependencies": {
+    "async": "0.9.0",
+    "blueimp-md5": "1.1.0",
+    "chalk": "0.5.1",
+    "connect-mongo": "0.4.1",
+    "ejs": "1.0.0",
+    "email": "0.2.6",
+    "express": "4.9.4",
+    "js-schema": "0.7.0",
+    "moment": "2.8.3",
+    "mongoose": "3.8.16",
+    "mongoose-post-find": "0.0.2",
+    "node-uuid": "1.4.1",
+    "socket.io": "1.1.0",
+    "underscore": "1.7.0"
+  }
+}
