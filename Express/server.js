@@ -9,7 +9,7 @@ var io = require('socket.io');
 var mongoose = require('mongoose');
 
 // plugins
-var somePlugin = require('./plugin/someLibrary/GENERIC');
+var somePlugin = require('./plugin/GENERIC/GENERIC');
 
 // models
 require('./model/GENERIC');
@@ -52,7 +52,7 @@ app.use(express.static(__frontend));
 
 
 // this route should follow an ActiveResource type standard
-app.get('/NOUN/VERB', controllerGENERIC.index);
+app.get('/NOUN/VERB', controllerGENERIC.viewRead);
 
 // 404 error
 app.use(function(req, res, next) {
