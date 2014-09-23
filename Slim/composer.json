@@ -1,0 +1,13 @@
+{
+  "name": "Generic Slim",
+  "version": "0.0.1",
+  "authors": [
+    {
+      "name": "Author",
+      "email": "author@site.com"
+    }
+  ],
+  "require": {
+    "slim/slim": "2.4.2"
+  }
+}
