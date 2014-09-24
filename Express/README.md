@@ -20,10 +20,9 @@ Any of these libraries may be dropped or swapped for alternatives.
 
 For Example:
 
-An SQL alternative to Mongoose is [Sequelize](http://sequelizejs.com/).
-A good Socket.IO alternative is [Primus](https://github.com/primus/primus).
-Two alternatives to EJS are [Handlebars](http://handlebarsjs.com/) and [Jade](http://jade-lang.com/). A community discussion of their merits is [here](https://github.com/expressjs/generator/issues/47).
-
+An SQL alternative to Mongoose is [Sequelize](http://sequelizejs.com/).  
+A good Socket.IO alternative is [Primus](https://github.com/primus/primus).  
+Two alternatives to EJS are [Handlebars](http://handlebarsjs.com/) and [Jade](http://jade-lang.com/). A community discussion of their merits is [here](https://github.com/expressjs/generator/issues/47).  
 
 Author
 ---
