@@ -12,9 +12,9 @@ Express
 
 This application is built primarily around Express, but also includes some other popular Node libraries listed below.
 
-[Mongoose](http://mongoosejs.com/) - MongoDB Model Layer
-[Socket.IO](http://socket.io/) - WebSocket Framework
-[EJS](https://github.com/visionmedia/ejs) - Templating Engine Compatible with Standard HTML
+[Mongoose](http://mongoosejs.com/) - MongoDB Model Layer  
+[Socket.IO](http://socket.io/) - WebSocket Framework  
+[EJS](https://github.com/visionmedia/ejs) - Templating Engine Compatible with Standard HTML  
 
 Any of these libraries may be dropped or swapped for alternatives.
 
