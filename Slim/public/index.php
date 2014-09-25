@@ -7,6 +7,8 @@ define('__FRONTEND', dirname(__FILE__));
 // core libs
 require ('../vendor/autoload.php');
 
+$config = require ('../config/config.php');
+
 // plugins
 
 // models
@@ -16,10 +18,10 @@ require ('../controller/GENERIC.php');
 
 $app = new \Slim\Slim();
 
-$app -> config(array('templates.path' => BACKEND_ROOT . '/view', ));
+$app -> config(array('templates.path' => __BACKEND . '/view', ));
 
 $app -> get('/', function() use ($app){
-	echo GenericController::viewRead();
+	echo GenericController::viewRead($app);
 });
 
 $app -> run();

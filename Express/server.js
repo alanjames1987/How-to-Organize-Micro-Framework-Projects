@@ -50,7 +50,6 @@ app.set('view engine', 'ejs');
 // configure Express plugins
 app.use(express.static(__frontend));
 
-
 // this route should follow an ActiveResource type standard
 app.get('/NOUN/VERB', controllerGENERIC.viewRead);
 

@@ -4,24 +4,24 @@ class GenericController {
 
 	// view routes
 
-	public static function viewCreate() {
-		// render a view
+	public static function viewCreate($app) {
+		// return a view
 	}
 
-	public static function viewRead() {
-		// render a view
+	public static function viewRead($app) {
+		// return a view
 	}
 
-	public static function viewReadOne() {
-		// render a view
+	public static function viewReadOne($app) {
+		// return a view
 	}
 
-	public static function viewUpdate() {
-		// render a view
+	public static function viewUpdate($app) {
+		// return a view
 	}
 
-	public static function viewDelete() {
-		// render a view
+	public static function viewDelete($app) {
+		// return a view
 	}
 
 	// rest routes
