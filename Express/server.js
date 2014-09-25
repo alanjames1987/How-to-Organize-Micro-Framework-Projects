@@ -1,6 +1,6 @@
-__root = __dirname;
-__backend = __dirname;
-__frontend = __dirname + '/public';
+ROOT = __dirname;
+BACKEND = __dirname;
+FRONTEND = __dirname + '/public';
 
 // core libs
 var express = require('express');
@@ -48,7 +48,7 @@ app.set('views', 'view');
 app.set('view engine', 'ejs');
 
 // configure Express plugins
-app.use(express.static(__frontend));
+app.use(express.static(FRONTEND));
 
 // this route should follow an ActiveResource type standard
 app.get('/NOUN/VERB', controllerGENERIC.viewRead);
