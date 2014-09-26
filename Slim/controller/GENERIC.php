@@ -1,6 +1,6 @@
 <?php
 
-class GenericController {
+class ControllerGeneric {
 
 	// view routes
 
