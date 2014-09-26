@@ -26,7 +26,7 @@ var httpServer = http.createServer(app);
 var socketIOServer = io.listen(httpServer);
 
 // configure Mongoose
-mongoose.connect('mongodb://localhost/GENERIC');
+// mongoose.connect('mongodb://localhost/GENERIC');
 
 // configure Socket.IO
 
@@ -52,6 +52,11 @@ app.use(express.static(FRONTEND));
 
 // this route should follow an ActiveResource type standard
 app.get('/NOUN/VERB', controllerGENERIC.viewRead);
+
+// testing routes
+// these should be removed before releasing into production
+app.get('/test', controllerGENERIC.viewTest);
+app.get('/api/test', controllerGENERIC.apiTest);
 
 // 404 error
 app.use(function(req, res, next) {
