@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 
 var genericModel = mongoose.model('GENERIC');
 
-var controller = {key:'value'};
+var controller = {};
 
 // view routes
 

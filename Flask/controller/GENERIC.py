@@ -51,13 +51,11 @@ class ControllerGeneric(object):
 		data = {'key':'value'};
 		return jsonify(data);
 
-
 	@staticmethod
 	def apiRead():
 		# perform some API action
 		data = {'key':'value'};
 		return jsonify(data);
-
 
 	@staticmethod
 	def apiReadOne():
@@ -65,13 +63,11 @@ class ControllerGeneric(object):
 		data = {'key':'value'};
 		return jsonify(data);
 
-
 	@staticmethod
 	def apiUpdate():
 		# perform some API action
 		data = {'key':'value'};
 		return jsonify(data);
-
 
 	@staticmethod
 	def apiDelete():
