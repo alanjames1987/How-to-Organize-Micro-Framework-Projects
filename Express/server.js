@@ -1,6 +1,6 @@
-__root = __dirname;
-__backend = __dirname;
-__frontend = __dirname + '/public';
+ROOT = __dirname;
+BACKEND = __dirname;
+FRONTEND = __dirname + '/public';
 
 // core libs
 var express = require('express');
@@ -9,7 +9,7 @@ var io = require('socket.io');
 var mongoose = require('mongoose');
 
 // plugins
-var somePlugin = require('./plugin/someLibrary/GENERIC');
+var somePlugin = require('./plugin/GENERIC/GENERIC');
 
 // models
 require('./model/GENERIC');
@@ -26,7 +26,7 @@ var httpServer = http.createServer(app);
 var socketIOServer = io.listen(httpServer);
 
 // configure Mongoose
-mongoose.connect('mongodb://localhost/GENERIC');
+// mongoose.connect('mongodb://localhost/GENERIC');
 
 // configure Socket.IO
 
@@ -48,11 +48,15 @@ app.set('views', 'view');
 app.set('view engine', 'ejs');
 
 // configure Express plugins
-app.use(express.static(__frontend));
-
+app.use(express.static(FRONTEND));
 
 // this route should follow an ActiveResource type standard
-app.get('/NOUN/VERB', controllerGENERIC.index);
+app.get('/NOUN/VERB', controllerGENERIC.viewRead);
+
+// testing routes
+// these should be removed before releasing into production
+app.get('/test', controllerGENERIC.viewTest);
+app.get('/api/test', controllerGENERIC.apiTest);
 
 // 404 error
 app.use(function(req, res, next) {

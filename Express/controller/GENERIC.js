@@ -2,9 +2,14 @@ var mongoose = require('mongoose');
 
 var genericModel = mongoose.model('GENERIC');
 
-var controller = {};
+var controller = {key:'value'};
 
 // view routes
+
+controller.viewTest = function(req, res) {
+	// render a view
+	res.render('GENERIC/CRUD');
+};
 
 controller.viewCreate = function(req, res) {
 	// render a view
@@ -31,35 +36,41 @@ controller.viewDelete = function(req, res) {
 	res.render('GENERIC/delete');
 };
 
-// rest routes
+// API routes
 
-controller.restCreate = function(req, res) {
+controller.apiTest = function(req, res) {
 	// perform some API action
-	var data = {};
+	var data = {key:'value'};
 	res.json(data);
 };
 
-controller.restRead = function(req, res) {
+controller.apiCreate = function(req, res) {
 	// perform some API action
-	var data = {};
+	var data = {key:'value'};
 	res.json(data);
 };
 
-controller.restReadOne = function(req, res) {
+controller.apiRead = function(req, res) {
 	// perform some API action
-	var data = {};
+	var data = {key:'value'};
 	res.json(data);
 };
 
-controller.restUpdate = function(req, res) {
+controller.apiReadOne = function(req, res) {
 	// perform some API action
-	var data = {};
+	var data = {key:'value'};
 	res.json(data);
 };
 
-controller.restDelete = function(req, res) {
+controller.apiUpdate = function(req, res) {
 	// perform some API action
-	var data = {};
+	var data = {key:'value'};
+	res.json(data);
+};
+
+controller.apiDelete = function(req, res) {
+	// perform some API action
+	var data = {key:'value'};
 	res.json(data);
 };
 

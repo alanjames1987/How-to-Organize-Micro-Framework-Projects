@@ -3,6 +3,7 @@
 ._*
 .Spotlight-V100
 .Trashes
+*.pyc
 Icon?
 ehthumbs.db
 Thumbs.db
