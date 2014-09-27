@@ -10,4 +10,4 @@ Thumbs.db
 bower_components/
 node_modules/
 vendor/
-!vendor/.gitempty
+!lib/vendor/.gitempty
