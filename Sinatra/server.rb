@@ -10,9 +10,13 @@ require 'sinatra'
 # create servers
 
 # config Sinatra
+set :views, settings.root + '/view'
+
+set :public_folder, File.dirname(__FILE__) + '/public'
 
 # this route should follow an ActiveResource type standard
 get '/' do
+	erb :'GENERIC/CRUD'
 end
 
 # testing routes
