@@ -8,6 +8,11 @@ var http = require('http');
 var io = require('socket.io');
 var mongoose = require('mongoose');
 
+// config
+var config = require('./config/config');
+require('./config/constants');
+require('./config/variables');
+
 // plugins
 var somePlugin = require('./plugin/GENERIC/GENERIC');
 

@@ -7,7 +7,10 @@ define('FRONTEND', dirname(__FILE__) . '/public');
 // core libs
 require ('vendor/autoload.php');
 
+// config
 $config = require ('config/config.php');
+require ('config/constants.php');
+require ('config/variables.php');
 
 // plugins
 
